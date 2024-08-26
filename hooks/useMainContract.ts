@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { MainContract } from "../src/contracts/MainContract";
 import { useTonClient } from "./useTonClient";
 import { useAsyncInitialize } from "./useAsyncInitialize";
-import { Address, OpenedContract } from "ton-core";
-import { toNano } from "ton-core";
+import { Address, OpenedContract } from "@ton/core";
+import { toNano } from "@ton/core";
 import { useTonConnect} from "../hooks/useTonConnect"
 
 export function useMainContract() {
@@ -52,13 +52,13 @@ export function useMainContract() {
       contract_balance: balance,
       ...contractData,  
       sendIncrement: async() => {
-        return mainContract?.sendIncrement(sender, toNano(0.05), 5);
+        return mainContract?.sendIncrement(sender.sender, toNano(0.05), 5);
       },
       sendDeposit: async() => {
-        return mainContract?.sendDeposit(sender, toNano("1"));
+        return mainContract?.sendDeposit(sender.sender, toNano("1"));
       },
       sendWithdrowalRequest: async() => {
-        return mainContract?.sendWithdrawalRequest(sender, toNano(0.05), toNano(0.07) );
+        return mainContract?.sendWithdrawalRequest(sender.sender, toNano(0.05), toNano(0.07) );
       },
     };
   }

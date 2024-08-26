@@ -1,5 +1,4 @@
 import { Address, beginCell, Cell, Contract, contractAddress, ContractProvider, Sender, SendMode } from "@ton/core";
-import { BigIntOptions } from "fs";
 
 export type MainContractConfig = {
     number: number;

@@ -826,6 +826,11 @@ base64-js@^1.3.1:
   resolved "https://registry.npmjs.org/base64-js/-/base64-js-1.5.1.tgz"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
+blueprint@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/blueprint/-/blueprint-2.1.5.tgz#1d8b077bf93060e92a6c617dca5539e118772fb0"
+  integrity sha512-gPXtQTFjeHmb6TDmwL1KSVwZIoUSIqhGYAYRz0AvEvp/6JPOrdENYL4zsAYp7HKHTnjKMngOsGUFv7czUj5vpQ==
+
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.11.9:
   version "4.12.0"
   resolved "https://registry.npmjs.org/bn.js/-/bn.js-4.12.0.tgz"
